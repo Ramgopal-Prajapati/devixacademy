@@ -1,0 +1,381 @@
+/* ==========================================================================
+   DeviX Academy - Comprehensive Multi-Device Responsive Stylesheet
+   Devices covered: Small Phones (360px), Phones (390px-480px),
+   Tablets (768px-991px), Laptops (1024px-1399px), Desktops (1440px+)
+   ========================================================================== */
+
+/* Standard 13" - 14" Laptops (1200px - 1399px) */
+@media (max-width: 1399.98px) and (min-width: 1200px) {
+  .navbar-inner {
+    gap: 12px;
+  }
+
+  .brand-title {
+    font-size: 1.08rem;
+  }
+
+  .brand-tagline {
+    font-size: 0.58rem;
+  }
+
+  .desktop-nav {
+    gap: 2px;
+  }
+
+  .nav-item-link {
+    padding: 7px 9px;
+    font-size: 0.82rem;
+  }
+
+  .header-cta-desktop {
+    padding: 8px 15px;
+    font-size: 0.82rem;
+  }
+
+  .hero-headline {
+    font-size: clamp(2.2rem, 3.8vw, 3.45rem);
+  }
+
+  .hero-float-card-top {
+    left: 2px;
+  }
+
+  .hero-float-card-bottom {
+    right: 2px;
+  }
+
+  .orbit-python {
+    right: 2px;
+  }
+
+  .orbit-cloud {
+    left: -6px;
+  }
+}
+
+/* Short Laptop Screens (e.g. 1366x768, 1280x720) */
+@media (max-height: 760px) and (min-width: 992px) {
+  .hero-section {
+    min-height: auto;
+    padding: calc(var(--nav-height) + 26px) 0 60px;
+  }
+
+  .hero-scroll-indicator {
+    display: none;
+  }
+}
+
+/* Tablets & Compact Laptops (< 1200px) */
+@media (max-width: 1199.98px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-menu-toggle {
+    display: inline-flex;
+  }
+
+  .header-cta-desktop {
+    display: none;
+  }
+
+  .hero-stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .programs-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .why-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .earth-nexus-wrapper,
+  .magic-orb-wrapper {
+    padding: 28px 24px;
+  }
+}
+
+/* Tablets & Large Phones (< 992px) */
+@media (max-width: 991.98px) {
+  :root {
+    --nav-height: 70px;
+  }
+
+  .section-pad {
+    padding: 70px 0;
+  }
+
+  .subpage-hero {
+    padding: calc(var(--nav-height) + 44px) 0 52px;
+  }
+
+  .hero-section {
+    min-height: auto;
+    padding: calc(var(--nav-height) + 28px) 0 64px;
+  }
+
+  .hero-stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 100%;
+  }
+
+  .hero-visual-stage {
+    margin-top: 24px;
+    padding: 8px 4px;
+  }
+
+  .hero-float-card-top {
+    top: -10px;
+    left: 6px;
+    padding: 9px 12px;
+  }
+
+  .hero-float-card-bottom {
+    bottom: -10px;
+    right: 6px;
+    padding: 9px 12px;
+  }
+
+  .orbit-python,
+  .orbit-cloud {
+    display: none;
+  }
+
+  .hero-scroll-indicator {
+    display: none;
+  }
+
+  .stats-band-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .timeline-desktop-rail,
+  .methodology-stage-panel {
+    display: none;
+  }
+
+  .timeline-mobile-list {
+    display: block;
+  }
+
+  .industry-tabs-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-bottom: 18px;
+  }
+
+  .gallery-masonry {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .collage-stage {
+    height: 390px;
+  }
+
+  .collage-card {
+    width: 192px;
+  }
+
+  .earth-stage,
+  .magic-orb-stage {
+    width: min(100%, 340px);
+  }
+}
+
+/* Mobile Phones (< 768px) */
+@media (max-width: 767.98px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .section-pad {
+    padding: 54px 0;
+  }
+
+  .section-pad-sm {
+    padding: 46px 0;
+  }
+
+  .section-title {
+    font-size: clamp(1.65rem, 6.2vw, 2.2rem);
+  }
+
+  .programs-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .pillar-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .industry-tabs-list {
+    grid-template-columns: 1fr;
+  }
+
+  .industry-panel {
+    padding: 22px 18px;
+  }
+
+  .glass-form-card {
+    padding: 22px 18px;
+  }
+
+  /* Prevent iOS Safari zoom when focusing inputs */
+  .form-control-devix,
+  .form-select-devix {
+    font-size: 16px;
+    padding: 12px 14px;
+  }
+
+  .gallery-masonry {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .collage-stage {
+    height: 350px;
+  }
+
+  .collage-card {
+    width: 160px;
+    padding: 6px 6px 9px;
+  }
+
+  .collage-card-caption {
+    font-size: 0.7rem;
+  }
+
+  .collage-card-caption span {
+    display: none;
+  }
+
+  .hero-float-card {
+    position: static;
+    margin-top: 12px;
+    animation: none;
+  }
+
+  .hero-visual-stage {
+    padding: 0;
+  }
+
+  .earth-nexus-wrapper,
+  .magic-orb-wrapper {
+    padding: 22px 16px;
+  }
+
+  .earth-stage,
+  .magic-orb-stage {
+    width: min(100%, 290px);
+  }
+
+  .earth-magic-dock {
+    justify-content: center;
+  }
+
+  .magic-opt-btn {
+    padding: 8px 13px;
+    font-size: 0.8rem;
+  }
+
+  .earth-hub-card,
+  .orb-milestone-card {
+    padding: 16px;
+  }
+
+  .lead-trainer-card {
+    padding: 20px 18px;
+  }
+
+  .testimonial-card {
+    padding: 22px 18px;
+  }
+
+  .devix-lightbox {
+    padding: 12px;
+  }
+
+  .site-footer {
+    padding: 54px 0 26px;
+  }
+
+  .footer-bottom-bar {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* Compact Smartphones (360px - 479px) */
+@media (max-width: 479.98px) {
+  .brand-tagline {
+    display: none;
+  }
+
+  .brand-title {
+    font-size: 1.04rem;
+  }
+
+  .hero-headline {
+    font-size: 1.9rem;
+    line-height: 1.14;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-cta-group .btn-devix-primary,
+  .hero-cta-group .btn-devix-outline {
+    width: 100%;
+  }
+
+  .program-btn-row {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-band-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .collage-stage {
+    height: 320px;
+  }
+
+  .collage-card {
+    width: 140px;
+  }
+
+  .earth-stage,
+  .magic-orb-stage {
+    width: min(100%, 256px);
+  }
+
+  .floating-whatsapp {
+    width: 50px;
+    height: 50px;
+    right: 14px;
+    bottom: 14px;
+    font-size: 1.4rem;
+  }
+
+  .floating-whatsapp-tooltip {
+    display: none;
+  }
+
+  .back-to-top-btn {
+    right: 17px;
+    bottom: 74px;
+    width: 42px;
+    height: 42px;
+  }
+}
